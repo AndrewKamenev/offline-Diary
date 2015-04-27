@@ -1,0 +1,268 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, serif;
+	text-decoration: none;
+}
+body {
+	background: rgb(220,220,220);
+}
+h2 {
+	color: maroon;
+}
+h2:hover {
+	opacity: 0.7;
+}
+button {
+	background: maroon;
+	border: 1px solid white; 
+	box-shadow: 0px 0px 0px 2px maroon;
+	border-radius: 5px;
+	padding: 4px;
+	color: white;
+	cursor: pointer;
+}
+button:hover {
+	background: white;
+	color: maroon;
+}
+#wrapper {
+	width: 800px;
+	margin: 30px auto;
+	background-color: white;
+}
+#header {
+	height: 300px;
+	border-top: 5px solid maroon;
+	background: url(https://scontent-fra.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/1526795_576544535747116_1630475540_n.jpg?oh=d5ca8479ac9200b01e75c59e99febcc3&oe=55DF0439) no-repeat 100% -250px;
+}
+#search {
+	margin: 10px;
+}
+#search input {
+	margin-right: 5px;
+	height: 15px;
+	border-radius: 7px;
+	padding: 5px;
+}
+#content {
+	float: left;
+	width: 500px;
+	min-height: 700px;
+	background: white;
+	padding: 10px;
+	background: white;
+}
+#content h2 {
+	margin-top: 10px;
+	padding-right: 50px;
+}
+#content textarea, #content input, #radioOpinion {
+	/*width: 95%;*/
+	border: solid 2px rgb(150,0,0);
+	border-radius: 10px;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 20px;
+	background: rgb(220,220,220);
+	padding: 10px;
+	width: 420px;
+}
+#content img {
+	margin: 10px auto;
+	width: 100%;
+}
+#radioOpinion {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+#radioOpinion input {
+	width: 20px;
+}
+
+.eventContent {
+	border: solid 1px black;
+	padding:10px;
+	margin-top: 10px;
+	padding-top:0px;
+	position: relative;
+	max-height:1000px;
+	overflow:hidden;
+}
+.deleteEvent {
+	display: inline;
+	float: right;
+	position:absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	width: 40px;
+	height: 40px;
+	background:url(https://addons.opera.com/media/extensions/05/73705/1.0-rev1/icons/icon_64x64.png) no-repeat;
+	background-size: 100%;
+	outline: none;
+	cursor: pointer;
+	box-shadow: none;
+}
+.deleteEvent:hover {
+	background: url(https://addons.opera.com/media/extensions/05/73705/1.0-rev1/icons/icon_64x64.png) no-repeat;
+	background-size: 100%;
+}
+#descriptionEvent {
+	width: 420px;
+	height: 320px;
+	font-size: 18px;
+	float: left;
+}
+#sidebar {
+	margin-left: 520px;
+	background: rgb(140,210,250);
+	padding: 10px;
+}
+#sidebar h2 {
+	font-size: 1.3em;
+	margin-top: 15px;
+}
+.list {
+	margin-top: 20px;
+}
+.linkAdd {
+	display: block;
+	margin-bottom: 5px;
+	text-decoration: none;
+	color: maroon;
+	border: 2px solid maroon;
+	padding: 5px;
+	width: 120px;
+	background: white;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+.linkAdd:hover {
+	background: maroon;
+	color: white;
+}
+.addEventButton {
+	width: 420px;
+	font-size: 1.5em;
+}
+#sortTime, #sortOp {
+	margin-right: 95px;
+}
+#footer {
+	clear: both;
+	height: 30px;
+	padding: 10px;
+	background: black;
+	color: white;
+	text-align: center;
+	font-weight: 700;
+}
+#dialog, #message {
+	display: none;
+}
+#addImage, #addMap {
+	margin-bottom: 10px;
+}
+#map {
+	width: 500px;
+	height:300px;
+}
+
+#colors {
+	position: relative;
+	top: -150%;
+	left:100%;
+	width: 90px;
+	border: solid 1px maroon;
+	background-color: white;
+	display: none;
+}
+.colorEdit {
+	width: 20px;
+	height:20px;
+	margin:5px;
+	float: left;
+}
+.red {
+	background-color: red;
+}
+.blue {
+	background-color: blue;
+}
+.green {
+	background-color: green;
+}
+.yellow {
+	background-color: yellow;
+}
+.maroon {
+	background-color: maroon;
+}
+.black {
+	background-color: black;
+}
+.positive {
+	background: rgb(200,250,200);
+}
+.negative {
+	background: rgb(250,190,190);
+}
+.neitral {
+	background: rgb(225,225,225);
+}
+.date {
+	font-size: 0.8em;
+	color: gray;
+}
+#editor {
+	display: inline;
+	float: right;
+	width: 50px;
+	height: 330px;
+	/*border: solid 1px black; */
+}
+#clearFix {
+	clear: both;
+}
+.editorIcons {
+  font-size: 30px;
+  padding: 0;
+  line-height: 1.3em;
+  margin: 0 5px 5px 0;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: black;
+  border: dotted 1px white;
+  width: 40px;
+  height: 40px;
+  float: left;
+  display: inline;
+  cursor: pointer;
+}
+#editTextDown, #editTextUp {  
+  background: url(http://cdns2.freepik.com/free-photo/assorted-arrows-vector-set_4815.jpg) no-repeat;
+  background-size: 500%;
+}
+#editTextDown {
+  background-position: -40px 0;
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+.strike {
+	text-decoration: line-through;
+}
+.video {
+	margin: 20px 0 20px 0;
+}
+/*#titleEvent:after, #descriptionEvent:after, #radioOpinion:after, #datepicker:after {
+	content: "*";
+}*/
